@@ -1,5 +1,4 @@
-# Comp560FinalProject
-## AI in Detecting Fake News 
+# AI in Detecting Fake News 
 
 ## Abstract 
 We will be exploring the use of various reinforcement learning from human feedback-based models from different applications, including Kahneman-Tversky Optimization (KTO), Direct Preference Optimization (DPO), and Reinforcement Learning with Human Feedback (RLHF), in the use of detecting misinformation and fake news.
