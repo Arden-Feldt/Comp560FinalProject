@@ -1,20 +1,20 @@
 import pandas as pd
+from sklearn.model_selection import train_test_split
 
-# Load the CSV files
-fake = pd.read_csv("D:/classwork/AI/Comp560FinalProject/data/importedDatasets/Fake.csv") 
-true = pd.read_csv("D:/classwork/AI/Comp560FinalProject/data/importedDatasets/True.csv")  
+# Load the CSV file
+data = pd.read_csv("D:/classwork/AI/Comp560FinalProject/WELFake_Dataset.csv") 
 
-# Add labels
-fake['label'] = 0
-true['label'] = 1
+# Split into train/test (80/20)
+train, test = train_test_split(data, test_size=0.2, random_state=42)
 
-# Combine and shuffle
-combined = pd.concat([fake, true]).sample(frac=1, random_state=42).reset_index(drop=True)
+# Shuffle both splits
+train = train.sample(frac=1, random_state=42).reset_index(drop=True)
+test = test.sample(frac=1, random_state=42).reset_index(drop=True)
 
-# Save to CSV
-combined.to_csv("D:/classwork/AI/Comp560FinalProject/data/combined.csv", index=False)
+# Save to CSVs
+train.to_csv("D:/classwork/AI/Comp560FinalProject/dataFixed/train.csv", index=False)
+test.to_csv("D:/classwork/AI/Comp560FinalProject/dataFixed/test.csv", index=False)
 
-# Show first few rows
-print(combined.head())
-
-
+# Confirm shapes
+print("Train shape:", train.shape)
+print("Test shape:", test.shape)
