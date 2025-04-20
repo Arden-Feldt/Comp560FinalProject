@@ -1,2 +1,4 @@
 .env
 combined.csv
+train.csv
+WELFake_Dataset.csv
