@@ -102,3 +102,9 @@ Supervised fine-tuning with DistilBERT provides promising results in fake news c
 - [DistilBERT Explained - Papers With Code](https://paperswithcode.com/method/distillbert)  
 - Tripathy, J. K., et al. (2021). [Comprehensive analysis of embeddings and pre-training in NLP](https://doi.org/10.1016/j.cosrev.2021.100433)
 
+---
+
+## Models
+
+- [Article Text Only Model](https://huggingface.co/kpeng-05/Fake-News-Detection-2.0-Text)
+- [Article Title Only Model](https://huggingface.co/kpeng-05/Fake-News-Detection-2.0-Title)
